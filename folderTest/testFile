@@ -31,8 +31,20 @@ paths:
       response:
         '200':
           description: search results matching criteria
-          
   /carssssQWERTY:
+    get:
+      summary: searches Cars
+      parameters:
+        - in: query
+          name: searchString
+          description: pass an optional search search
+          required: false
+          schema:
+            type: string
+      response:
+        '200':
+          description: search results matching criteria
+  /someNewURL:
     get:
       summary: searches Cars
       parameters:
